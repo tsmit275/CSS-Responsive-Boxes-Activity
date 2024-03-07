@@ -1,3 +1,48 @@
 body {
-  background: blanchedalmond;
+  background: white;
+  text-align: center;
+  font-size: 40px;
+
+}
+* {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+
+}
+
+header {
+  width: 90%;
+  height: 30vh;
+  flex-grow: 1;
+}
+
+main {
+  height: 80vh;
+  flex-grow: 3;
+}
+
+footer {
+  flex-grow: 1;
+  height: 60vh;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+main,
+footer,
+header {
+  margin: 1em;
+  background-color: pink;
+  text-align: center;
 }
